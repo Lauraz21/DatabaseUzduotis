@@ -9,7 +9,7 @@ namespace DatabaseUzduotis
             Console.WriteLine("Hello, World!");
             using var dbContext = new FilesDbContext();
             string path = Console.ReadLine();
-            // "C:\Users\Laura\Desktop\CodeAcademy\Programa\Duomenu bazes";
+           
 
             dbContext.Folders.AddRange(GetFolders(path));
             dbContext.SaveChanges();
